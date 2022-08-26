@@ -35,7 +35,7 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.map(item => item.price).reduce((total, current) => total + current)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,6 +55,9 @@ const cart = [
 
 //CODE HERE
 
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    return cartTotal += cartTotal * (cartTotal * tax) - couponValue
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -78,8 +81,7 @@ const cart = [
 */
 
 /*
-    TEXT ANSWER HERE
-
+    My customer object would include their first name, last name, items in their cart, and their total price of those items
 */
 
 /*
