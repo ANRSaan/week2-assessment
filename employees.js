@@ -73,7 +73,6 @@ empOne.getSchedule()
 empTwo = empOne
 
 empTwo.name = 'Nick'
-console.log(empTwo)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -106,6 +105,12 @@ class Manager extends Employee{
         super(name, shifts)
         this.employees = employees
     }
+    getEmployee(){
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+    addEmployee(emp){
+        this.employees.push(emp)
+    }
 }
 
 /*
@@ -121,6 +126,7 @@ class Manager extends Employee{
 
 //CODE HERE
 
+const winston = new Manager("Winston", "weekday mornings, weekday afternoons", ["Cece", "Schmidt"])
 
 /*
     Call the `getEmployees` method on the
@@ -129,11 +135,16 @@ class Manager extends Employee{
 
 //CODE HERE
 
+winston.getEmployee()
+
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
     'Coach' or whatever name you'd like.
 */
+
+winston.addEmployee("Coach")
+
 
 //CODE HERE 
 
@@ -144,3 +155,4 @@ class Manager extends Employee{
 */
 
 //CODE HERE
+winston.getEmployee()
