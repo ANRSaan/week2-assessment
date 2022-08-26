@@ -166,14 +166,13 @@ foodArr = [
 //CODE HERE
 
 
-const filteredFood = foodArr.filter(arr => {
-    for (i = 0; i < arr.length; i++)
-        if (arr[i].tag === 'pizza') {
-            arr[i]
-        }
+
+const filteredFood = foodArr.filter(item => {
+    if (item.tags === 'pizza') {
+        return item
+    }
+
 })
-
-
 
 
 //////////////////PROBLEM 5////////////////////
@@ -218,12 +217,21 @@ const filteredFood = foodArr.filter(arr => {
 //CODE HERE
 
 const filterByProperty = (property, number, type) => {
-    for (i=0; i< arr.length; i++){
-        if (type === 'below'){
-            
-        }
-    }
+    return foodArr.filter((item) => {
+            if (type === 'above'){
+                if (item[property] > number){
+                    return true
+                } else {
+                    return false}
+            } else if (type === 'below'){
+                if (item[property] < number){
+                    return true
+                } else {
+                    return false}
+            }
+    })
 }
+
 
 
 /*
@@ -234,3 +242,5 @@ const filterByProperty = (property, number, type) => {
 */
 
 //CODE HERE
+
+// console.log(filterByProperty('price', 3, "above"))
