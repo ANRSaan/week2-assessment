@@ -81,8 +81,9 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 */
 
 /*
-    My customer object would include their first name, last name, items in their cart, and their total price of those items
-*/
+    My customer object would include their first name, last name, items in their cart, and their total price of those items.
+    
+    First and Last names are seperate values in order to both identify the customer as well as have them able to be easilly changed while only interfearing with one value.  It's also helpful to know what they're buying, and how much those items cost to break down both items they like as well as how much they spend over time.
 
 /*
     Now, create a customer object following your own
@@ -90,3 +91,10 @@ const calcFinalPrice = (cartTotal, couponValue, tax) => {
 */
 
 //CODE HERE
+
+const customerData = {
+    firstName: "Ben",
+    lastName: "Andjerry",
+    cartItems: ["milk", "salt", "caramel", "hazelnuts"],
+    cartTotal: 23.81
+}
