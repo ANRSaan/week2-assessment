@@ -113,7 +113,7 @@ foodArr = [
     category: 'hotdog',
     popularity: 2,
     rating: 10,
-    tags: 'hotdog'
+    tags: ['hotdog', 'Hottie McDog', 'Father of the Bride']
     },
 
     {
@@ -122,7 +122,7 @@ foodArr = [
     category: 'It\'s a pizza',
     popularity: 45,
     rating: 11,
-    tags: 'pizza'
+    tags: ['pizza', 'Spaceballs', 'Yogurt']
     },
     {
     name: 'Mark',
@@ -130,7 +130,7 @@ foodArr = [
     category: 'An Actual Person',
     popularity: 1,
     rating: 1,
-    tags: 'Mark'
+    tags: ['Mark', 'terrible employee', 'My best guess for the worst human on earth']
     },
     {
     name: '#4',
@@ -138,7 +138,7 @@ foodArr = [
     category: 'hotdog',
     popularity: 58008,
     rating: 21,
-    tags: 'hotdog'
+    tags: ['hotdog', 'just a hotdog', 'seriously, there\'s not even a bun']
     },
     {
     name: 'Pizza McPizzaface',
@@ -146,7 +146,7 @@ foodArr = [
     category: 'It\'s a pizza',
     popularity: 105,
     rating: 6,
-    tags: 'pizza'
+    tags: ['pizza', 'Boaty McBoatface']
     }
 
 ]
@@ -168,11 +168,13 @@ foodArr = [
 
 
 const filteredFood = foodArr.filter(item => {
-    if (item.tags === 'pizza') {
+    if (item.tags.includes('pizza')) {
         return item
     }
 
 })
+
+console.log(filteredFood)
 
 
 //////////////////PROBLEM 5////////////////////
