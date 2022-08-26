@@ -32,6 +32,15 @@
 
 //CODE HERE
 
+let pizza = {
+    name: 'The Foodinator',
+    price: 49.95,
+    category: 'It\'s a pizza',
+    popularity: 9001,
+    rating: 5,
+    tags: 'pizza, Foodinator, Janeane Garofalo'
+}
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -44,6 +53,7 @@
 
 //CODE HERE
 
+console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -53,6 +63,8 @@
 */
 
 //CODE HERE
+
+console.log(pizza['tags'])
 
 
 /*
@@ -64,6 +76,8 @@
 
 //CODE HERE
 
+const {name, price} = pizza
+console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -74,6 +88,9 @@
 
 //CODE HERE
 
+const {blank, blank2, category} = pizza
+
+console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -89,7 +106,50 @@
 
 //CODE HERE
 
+foodArr = [
+    {
+    name: 'Hottie the Dog',
+    price: 19.95,
+    category: 'hotdog',
+    popularity: 2,
+    rating: 10,
+    tags: 'hotdog'
+    },
 
+    {
+    name: 'Pizza the Hut',
+    price: 9.95,
+    category: 'It\'s a pizza',
+    popularity: 45,
+    rating: 11,
+    tags: 'pizza'
+    },
+    {
+    name: 'Mark',
+    price: 299.95,
+    category: 'An Actual Person',
+    popularity: 1,
+    rating: 1,
+    tags: 'Mark'
+    },
+    {
+    name: '#4',
+    price: .95,
+    category: 'hotdog',
+    popularity: 58008,
+    rating: 21,
+    tags: 'hotdog'
+    },
+    {
+    name: 'Pizza McPizzaface',
+    price: 39.95,
+    category: 'It\'s a pizza',
+    popularity: 105,
+    rating: 6,
+    tags: 'pizza'
+    }
+
+]
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -105,7 +165,14 @@
 
 //CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
+const filteredFood = foodArr.filter(arr => {
+    for (i = 0; i < arr.length; i++)
+        if (arr[i].tag === 'pizza') {
+            arr[i]
+        }
+})
+
 
 
 
@@ -149,6 +216,14 @@
 */
 
 //CODE HERE
+
+const filterByProperty = (property, number, type) => {
+    for (i=0; i< arr.length; i++){
+        if (type === 'below'){
+            
+        }
+    }
+}
 
 
 /*
