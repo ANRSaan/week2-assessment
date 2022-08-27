@@ -38,7 +38,7 @@ let pizza = {
     category: 'It\'s a pizza',
     popularity: 9001,
     rating: 5,
-    tags: 'pizza, Foodinator, Janeane Garofalo'
+    tags: ['pizza', 'Foodinator', 'Janeane Garofalo']
 }
 
 
@@ -136,7 +136,7 @@ foodArr = [
     name: '#4',
     price: .95,
     category: 'hotdog',
-    popularity: 58008,
+    popularity: 666,
     rating: 21,
     tags: ['hotdog', 'just a hotdog', 'seriously, there\'s not even a bun']
     },
