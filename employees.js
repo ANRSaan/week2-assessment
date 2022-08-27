@@ -75,6 +75,7 @@ empTwo = empOne
 empTwo.name = 'Nick'
 
 
+
 //////////////////PROBLEM 2////////////////////
 /*  
     Write a class called Manager that *extends* 
