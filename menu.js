@@ -53,7 +53,7 @@ let pizza = {
 
 //CODE HERE
 
-console.log(pizza.popularity)
+// console.log(pizza.popularity)
 
 /*
     Second, log the second tag in your pizza's
@@ -64,7 +64,7 @@ console.log(pizza.popularity)
 
 //CODE HERE
 
-console.log(pizza['tags'])
+// console.log(pizza['tags'])
 
 
 /*
@@ -76,8 +76,8 @@ console.log(pizza['tags'])
 
 //CODE HERE
 
-const {name, price} = pizza
-console.log(price)
+const {price} = pizza
+// console.log(price)
 
 /*
     Fourth, and last, destructure the category
@@ -88,9 +88,9 @@ console.log(price)
 
 //CODE HERE
 
-const {blank, blank2, category} = pizza
+const {category} = pizza
 
-console.log(category)
+// console.log(category)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -168,10 +168,7 @@ foodArr = [
 
 
 const filteredFood = foodArr.filter(item => {
-    if (item.tags.includes('pizza')) {
-        return item
-    }
-
+    return item.tags.includes('pizza')
 })
 
 console.log(filteredFood)
@@ -218,18 +215,28 @@ console.log(filteredFood)
 
 //CODE HERE
 
+// const filterByProperty = (property, number, type) => {
+//     return foodArr.filter((item) => {
+//             if (type === 'above'){
+//                 if (item[property] > number){
+//                     return true
+//                 } else {
+//                     return false}
+//             } else if (type === 'below'){
+//                 if (item[property] < number){
+//                     return true
+//                 } else {
+//                     return false}
+//             }
+//     })
+// }
+
 const filterByProperty = (property, number, type) => {
     return foodArr.filter((item) => {
             if (type === 'above'){
-                if (item[property] > number){
-                    return true
-                } else {
-                    return false}
+                return item[property] > number       
             } else if (type === 'below'){
-                if (item[property] < number){
-                    return true
-                } else {
-                    return false}
+                return item[property] < number
             }
     })
 }
@@ -245,4 +252,4 @@ const filterByProperty = (property, number, type) => {
 
 //CODE HERE
 
-// console.log(filterByProperty('price', 3, "above"))
+// console.log(filterByProperty('price', 30, "above"))
